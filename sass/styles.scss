@@ -1,0 +1,15 @@
+//--------> Imports
+@import "variables";
+@import "header";
+@import "carousel";
+@import "qs";
+@import "productos";
+@import "contacto";
+@import "footer";
+
+// -------> Globals
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

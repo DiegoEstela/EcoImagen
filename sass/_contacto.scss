@@ -1,0 +1,91 @@
+.Contacto {
+  color: $c-orange;
+  font-size: 3em;
+  margin-left: 10%;
+
+  padding-top: 9vh;
+  @media only screen and (max-width: 900px) {
+    padding-top: 2px;
+  }
+  @media only screen and (max-width: 900px) {
+    margin: 0px;
+    font-size: 2em;
+    text-align: center;
+  }
+}
+.ContactoForm {
+  margin-bottom: 30px;
+  display: flex;
+  @media only screen and (max-width: 900px) {
+    justify-content: center;
+  }
+  .Formulario {
+    width: 40%;
+    margin-left: 80px;
+    padding: 3vh;
+    @media only screen and (max-width: 900px) {
+      margin-left: 2%;
+    }
+    .inputForm {
+      display: flex;
+      flex-direction: row;
+      label {
+        color: white;
+        font-weight: bold;
+      }
+      #name1,
+      #mail1,
+      #interesadoEn,
+      #txt1 {
+        margin: 1vh !important;
+        background-color: rgba(236, 234, 234, 0.856);
+        width: 80%;
+      }
+    }
+    .texto {
+      color: white;
+      font-weight: bold;
+    }
+    #txt1 {
+      margin: 1vh !important;
+      height: 150px;
+      width: 80%;
+      background-color: rgba(236, 234, 234, 0.856);
+
+      @media only screen and (max-width: 900px) {
+        width: 240px;
+      }
+    }
+    .divBoton {
+      #botonEnviar {
+        margin: 1vh !important;
+        background-color: $c-orange;
+        height: 70px;
+        color: white;
+
+        &:hover {
+          background-color: #d16d59;
+          transform: scale(0.98);
+        }
+        @media only screen and (max-width: 900px) {
+          height: 40px;
+          width: 170px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .imgContacto {
+    margin: 2px;
+    display: none;
+  }
+
+  .ContactoForm {
+    display: block;
+  }
+  .inputForm {
+    width: 300px;
+  }
+}
